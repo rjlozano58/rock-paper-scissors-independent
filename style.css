@@ -1,0 +1,154 @@
+body{
+    background: #001166;
+    color:white;
+  }
+  div{
+    font-family:helvetica;
+    font-weight:300;
+  }
+  .row {
+    text-align: center;
+  }
+  .choices {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+  }
+  h4,h3,h1,.result{
+    font-family:helvetica;
+    font-weight:400;
+  } 
+  .input{
+    background:navy;
+    border:1px solid white;;
+    outline:none;
+  /*   border-radius:10px; */
+    padding:5px;
+    color:white;
+  }
+  .play{
+    padding:5px;
+  /*   border-radius:10px; */
+    background:red;
+    border:1px solid white;
+    color:white;
+  }
+  .choices-container{
+    margin:20px 0;
+    display:grid;
+    grid-template-columns:20% 20% 20%;
+    justify-content:center;
+    column-gap:10px;
+  }
+  .rock-button,.paper-button,.scissors-button{
+    background:red;
+    border: 1px solid white;
+    color:white;
+    font-family:helvetica;
+    font-weight:300;
+    font-size:100%;
+    padding:10px;
+    transition:0.3s;
+  }
+  .rock-button:hover,.paper-button:hover,.scissors-button:hover{
+    cursor:pointer;
+    box-shadow: 0 0 8px white;
+  }
+  p{
+    font-family:helvetica;
+    font-weight:300;
+  }
+  .r-p-s-img{
+    width:80%;
+    max-width:600px;
+    background:#6c9675;
+    border:2px solid white;
+    transition:0.3s;
+    
+  }
+  .r-p-s-img:hover{
+    box-shadow:0 0 8px black;
+  }
+  .result{
+    font-size:40px;
+    margin-bottom:40px;
+  }
+  .scores-container{
+      display:grid;
+      grid-template-columns:25% 25%;
+      grid-template-rows:auto;
+      justify-content:center;
+  
+    }
+  @media screen and (max-width:800px){
+    .scores-container{
+      display:grid;
+      grid-template-columns:50% 50%;
+      grid-template-rows:auto;
+      justify-content:center;
+      background:red;
+      color:white;
+    }
+  }
+  .scores-container div{
+    border:1px solid white;
+    padding:10px;
+    background:red;
+    color:white;
+  }
+  .user-box{
+      display:block;
+      margin:5px auto;
+      width:50%;
+      height:fit-content;
+      background:green;
+      color:white;
+      border:navy;
+      padding:10px 0;
+    }
+    .computer-box{
+      display:block;
+      margin:5px auto;
+      width:50%;
+      height:fit-content;
+      background:red;
+      color:white;
+      border:navy;
+      padding:10px 0;
+    }
+    .tie-box{
+      display:block;
+      margin:5px auto;
+      width:50%;
+      height:fit-content;
+      background:grey;
+      color:white;
+      border:navy;
+      padding:10px 0;
+    }
+  @media screen and (max-width:800px){
+    .user-box{
+      width:100%;
+      height:fit-content;
+      background:green;
+      color:white;
+      border:navy;
+      padding:10px 0;
+    }
+    .computer-box{
+      width:100%;
+      height:fit-content;
+      background:red;
+      color:white;
+      border:navy;
+      padding:10px 0;
+    }
+    .tie-box{
+      width:100%;
+      height:fit-content;
+      background:grey;
+      color:white;
+      border:navy;
+      padding:10px 0;
+    }
+  }
