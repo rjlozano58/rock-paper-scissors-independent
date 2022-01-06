@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RPS Game</title>
+    <!-- Link CSS here -->
+    <link type="text/css" rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="row">
+      <h1>Rock Paper Scissors</h1>
+      <p>Play Rock Paper Scissors! Use the commands "rock", "paper", and "scissors" in the input box inorder to play!</p>
+      <img class="r-p-s-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Rock-paper-scissors.svg/1200px-Rock-paper-scissors.svg.png" />
+
+      <h3>Please Submit Your Choice Below</h3>
+      <div>
+        <input class="input">
+        <button class="play">play!</button>
+      </div>
+      <div class="choices-container">
+        <button class="rock-button">Rock</button>
+        <button class="paper-button">Paper</button>
+        <button class="scissors-button">Scissors</button>
+      </div>
+      <div class="choices" class="row">
+        <div>
+          <h4>User Choice</h4>
+          <p class="userChoice"></p>
+        </div>
+        <div>
+          <h4>Computer Choice</h4>
+          <p class="computerChoice"></p>
+        </div>
+      </div>
+      <div class="result"></div>
+      <div class="scores-container">
+        <div>User: <span class="user-score">0</span></div>
+        <div>Computer: <span class="computer-score">0</span></div>
+      </div>
+      <div class="stream"></div>
+    </div>
+
+    <!-- Link JQuery here -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- Link script.js here -->
+    <script src="script.js"></script>
+  </body>
+</html>
